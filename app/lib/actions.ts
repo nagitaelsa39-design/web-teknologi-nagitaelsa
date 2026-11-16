@@ -4,7 +4,7 @@ import { signIn } from '@/auth';
 import { AuthError } from 'next-auth';
 import { z } from 'zod';
 import postgres from 'postgres';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import { redirect } from 'next/navigation';
 
 const sql = postgres(process.env.DATABASE_URL!, { ssl: 'require' });
