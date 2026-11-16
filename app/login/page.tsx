@@ -30,7 +30,7 @@ export default function Page() {
           className="w-full flex h-20 shrink-0 items-center justify-start rounded-2xl md:rounded-3xl bg-gradient-to-r from-blue-600/90 via-blue-500/85 to-sky-500/80 backdrop-blur-xl border border-white/30 shadow-xl shadow-blue-500/15 p-4 md:h-52 md:items-end transition-all duration-200 hover:shadow-blue-500/25 active:scale-[0.99] cursor-pointer"
         >
           <Image
-            src="/logo/uia-logo.png"
+            src="/Logo/uia-logo.png"
             width={500}
             height={152}
             className="block h-12 w-auto object-contain md:h-32"
