@@ -13,7 +13,7 @@ export default function SideNav() {
       >
         <div className="w-32 text-white md:w-40">
           <Image
-            src="/logo/uia-logo.png"
+            src="/Logo/uia-logo.png"
             width={300}
             height={91}
             className="block h-10 w-auto object-contain md:h-16"
