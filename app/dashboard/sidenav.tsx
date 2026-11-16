@@ -28,10 +28,13 @@ export default function SideNav() {
         <form
           action={async () => {
             'use server';
-            await signOut();
+            await signOut({ redirectTo: '/' });
           }}
         >
-          <button className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-xl bg-white/60 backdrop-blur-md border border-white/60 p-3 text-sm font-medium text-gray-700 hover:bg-red-50/80 hover:text-red-600 hover:border-red-200/60 shadow-sm md:flex-none md:justify-start md:p-2 md:px-3 active:scale-95 transition-all duration-200">
+          <button
+            type="submit"
+            className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-xl bg-white/60 backdrop-blur-md border border-white/60 p-3 text-sm font-medium text-gray-700 hover:bg-red-50/80 hover:text-red-600 hover:border-red-200/60 shadow-sm md:flex-none md:justify-start md:p-2 md:px-3 active:scale-95 transition-all duration-200"
+          >
             <PowerIcon className="w-6 shrink-0" />
             <div className="hidden md:block">Keluar</div>
           </button>
